@@ -4,13 +4,11 @@
 
 **Make sense of AI answers: understand the point, the reasoning, and what to do next.**
 
-Have you ever read a long AI answer and still wondered what it was trying to say? You ask for a clearer explanation, and it gives you the same answer with a few words changed.
+Have you ever read a long AI answer and still been unsure of the point? You ask for a clearer explanation, and it repeats the same thing.
 
-This skill is for those moments. Use it from the start of a conversation, or when you want something explained again. Try it when learning something new, discussing work, or asking AI to help you figure something out.
+This skill is for those moments. It adapts the explanation to the discussion and the kind of answer you need: a direct answer to a simple question, an overview before a complex task, or precise, professional language for analysis. Use it from the start, or ask it to explain something again when you get stuck.
 
 ## Suppose you need to analyze this month's sales
-
-Here's an everyday work question to illustrate two ways of explaining something.
 
 **You ask: “My manager asked me to analyze this month's sales. What should I look at first?”**
 
@@ -18,65 +16,63 @@ You might get an answer like this:
 
 > Examine sales volume, growth trends, product mix, customer segments, and channel performance. Use month-over-month and year-over-year comparisons to identify anomalies, then drill down further.
 
-Those are reasonable areas to investigate. But you may still be unsure what to do first, or why.
+There are plenty of directions, but the starting point and reasoning are still unclear. Another way to organize the answer:
 
-Another way to explain it:
-
-> Start with one core question: **Did sales rise or fall this month, where did most of the change come from, and why?**
+> **Objective: identify the main sources of this month's sales change and assess the underlying drivers.**
 >
-> Work through four steps:
+> Structure the analysis in four parts:
 >
-> 1. **See the overall change.** Compare this month's revenue with last month's. If the business has strong seasonal patterns, compare with the same month last year too, so you don't mistake a seasonal shift for an operating problem.
-> 2. **Find where it happened.** Break the figures down by product, store, or channel. Identify which parts contributed most to growth or decline to narrow your investigation.
-> 3. **Investigate why.** For the parts with the biggest changes, start with units sold and actual selling prices, then check possible explanations such as promotions or stock shortages. Data gives you leads; events happening together don't establish causation.
-> 4. **Explain what to do next.** State the overall change, where it came from, and which causes you've confirmed. Make recommendations supported by those findings, and identify the information still needed for unresolved questions.
+> 1. **Overall performance:** compare this month's revenue with last month's to establish the size of the change. Where seasonality is significant, also use the same month last year to assess the trend.
+> 2. **Contribution by segment:** break down the change by product, region, or channel. Identify the largest contributions to the overall increase or decline and prioritize those areas for investigation.
+> 3. **Underlying drivers:** examine units sold, actual selling prices, and product mix for the main sources of change. Check explanations against business information such as promotions and supply conditions.
+> 4. **Conclusions and recommendations:** summarize the findings, distinguish confirmed causes from hypotheses, and propose corresponding actions or further checks.
 >
-> If your manager's real question is “Why did we sell more but make less money?”, include costs and profit and adjust the analysis accordingly.
+> If the objective is to explain rising sales but falling profit, include costs and profit and adjust the focus accordingly.
 
-You know what question you're answering and can follow a path: overall change → where it happened → why → what next. Each step has a purpose, and you can see when the direction needs to change.
+The objective comes first, followed by a clear analytical path. The language stays professional, and the reader can see how each part contributes to answering the question.
 
-*This example was written to illustrate the explanation style. It is not a recorded conversation.*
+*This example was written to illustrate the explanation style. It is not a recorded conversation or a template for every answer.*
 
 ## When to try it
 
-- AI has explained a concept, but you still don't understand what it means.
-- You've received a long analysis and want to know what matters most.
-- AI recommends something, and you want to understand why and whether it fits your situation.
-- You've already said “I don't understand” and want a different explanation rather than a repeat.
+- You're learning a concept and want an explanation that starts from something familiar.
+- You're reading an analysis or proposal and want the main point before the evidence and detail.
+- You're comparing options and want to understand their differences and when each fits.
+- You're stuck on one sentence or step and want that gap filled without starting over.
 
-The skill doesn't require long answers. Simple questions get direct answers. You can ask for less detail, more detail, or an example first.
+Clarity can take different forms. Everyday conversation can be brief and natural; professional discussion can be precise and concise. Use an overview when you need the full picture, or a local explanation when only one part is unclear. Your requested length, style, and format take priority.
 
 ## Download and use
 
 Select **Code → Download ZIP** on the repository page, extract it, and rename the folder to `clear-explanations`. Alternatively, save just [SKILL.md](SKILL.md) inside a folder with that name.
 
-**In Codex:** place the folder in your skills directory. The default path is:
+**In Codex:** the user-level installation path in the [current official documentation](https://learn.chatgpt.com/docs/build-skills) is:
 
 ```text
-~/.codex/skills/clear-explanations/SKILL.md
+~/.agents/skills/clear-explanations/SKILL.md
 ```
 
-If you configured `CODEX_HOME`, use its `skills/` subdirectory. Compare or back up any existing files with the same name before replacing them.
+For use in one project only, place it in that project's `.agents/skills/clear-explanations/` directory. Compare or back up an existing skill with the same name before replacing it. Directory conventions can vary by version; follow the documentation for the tool you use.
 
-After installation, try this in your next conversation turn:
+After installation, try:
 
 ```text
-$clear-explanations Please explain: [your question]
+$clear-explanations Explain this proposal using professional language. Start with the overall approach.
 ```
 
 Or follow up in an existing conversation:
 
 ```text
-$clear-explanations I didn't understand this part. Could you explain it with a different example?
+$clear-explanations I didn't understand the second step. Please explain just that part.
 ```
 
-The execution instructions are currently in Chinese. The skill has no scripts and needs no additional API key. For other AI tools, follow their own installation instructions; you can also try using the body of `SKILL.md` as conversation instructions.
+If the skill doesn't appear after installation, restart Codex. The execution instructions are currently in Chinese. The skill has no scripts and needs no additional API key. For other AI tools, follow their installation instructions; you can also try using the body of `SKILL.md` as conversation instructions.
 
 ## Why I made this
 
 When working with AI to write code and build products, I often received detailed explanations that still left me unsure why a step was needed or what to do next. Sometimes I was stuck on just one step, but the AI started the whole explanation again.
 
-I made this skill to capture what helped me: a clear starting point, an explanation of why the steps fit together, and a different approach when I got stuck. I'll keep improving it as new problems come up in use. You're welcome to open an Issue with something you found confusing or a suggestion for a clearer explanation.
+I made this skill to capture what helped me: a clear starting point, an explanation of why the steps fit together, and a different approach when I got stuck. I'll keep improving it as new problems come up in use. You're welcome to open an Issue with something you found unclear or a suggestion for a better explanation.
 
 A clear explanation can still be wrong. Important facts and conclusions still need checking.
 
