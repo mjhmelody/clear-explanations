@@ -44,13 +44,18 @@
 
 ## 下载与使用
 
-在仓库页面选择 **Code → Download ZIP**，解压后将文件夹命名为 `clear-explanations`。也可以只把 [SKILL.md](SKILL.md) 保存到同名文件夹里。
+**在 Codex 中手动安装：**
 
-**在 Codex 中：** 按[当前官方说明](https://learn.chatgpt.com/docs/build-skills)，用户级安装路径为：
+1. 在仓库页面选择 **Code → Download ZIP** 并解压，将解压得到的文件夹重命名为 `clear-explanations`。
+2. 创建或打开 `~/.agents/skills/`，将整个 `clear-explanations` 文件夹放进去。
+
+按[当前官方说明](https://learn.chatgpt.com/docs/build-skills)，安装后的文件位置应为：
 
 ```text
 ~/.agents/skills/clear-explanations/SKILL.md
 ```
+
+也可以只下载 [SKILL.md](SKILL.md)，将它保存为上面这个路径。
 
 仅供某个项目使用时，放到该项目的 `.agents/skills/clear-explanations/` 下。已有同名 Skill 时，先比较或备份。不同版本的目录约定可能不同，请以所用工具的说明为准。
 

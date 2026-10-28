@@ -44,13 +44,18 @@ Clarity can take different forms. Everyday conversation can be brief and natural
 
 ## Download and use
 
-Select **Code → Download ZIP** on the repository page, extract it, and rename the folder to `clear-explanations`. Alternatively, save just [SKILL.md](SKILL.md) inside a folder with that name.
+**Manual installation in Codex:**
 
-**In Codex:** the user-level installation path in the [current official documentation](https://learn.chatgpt.com/docs/build-skills) is:
+1. Select **Code → Download ZIP** on the repository page, extract it, and rename the extracted folder to `clear-explanations`.
+2. Create or open `~/.agents/skills/`, then move the entire `clear-explanations` folder into it.
+
+The resulting file location should be as follows, per the [current official documentation](https://learn.chatgpt.com/docs/build-skills):
 
 ```text
 ~/.agents/skills/clear-explanations/SKILL.md
 ```
+
+Alternatively, download just [SKILL.md](SKILL.md) and save it at the path above.
 
 For use in one project only, place it in that project's `.agents/skills/clear-explanations/` directory. Compare or back up an existing skill with the same name before replacing it. Directory conventions can vary by version; follow the documentation for the tool you use.
 
