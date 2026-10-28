@@ -29,7 +29,7 @@ There are plenty of directions, but the starting point and reasoning are still u
 >
 > If the objective is to explain rising sales but falling profit, include costs and profit and adjust the focus accordingly.
 
-The objective comes first, followed by a clear analytical path. The language stays professional, and the reader can see how each part contributes to answering the question.
+This illustrates how to present an analytical approach: state the objective, then show how each part helps answer the question. The skill improves the explanation; it does not replace professional analytical methods.
 
 *This example was written to illustrate the explanation style. It is not a recorded conversation or a template for every answer.*
 
